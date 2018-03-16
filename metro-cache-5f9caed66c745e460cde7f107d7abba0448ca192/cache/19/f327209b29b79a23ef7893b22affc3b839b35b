@@ -1,0 +1,21 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.FormControl = exports.TextInput = undefined;
+
+  var _templateObject = _taggedTemplateLiteral(["\n    padding-vertical: 5px;\n "], ["\n    padding-vertical: 5px;\n "]),
+      _templateObject2 = _taggedTemplateLiteral(["\n    margin-bottom: 24px;\n  "], ["\n    margin-bottom: 24px;\n  "]);
+
+  var _native = require(_dependencyMap[0], "styled-components/native");
+
+  var _native2 = _interopRequireDefault(_native);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+  var TextInput = exports.TextInput = _native2.default.TextInput(_templateObject);
+
+  var FormControl = exports.FormControl = _native2.default.View(_templateObject2);
+});

@@ -1,0 +1,20 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.Container = undefined;
+
+    var _templateObject = _taggedTemplateLiteral(["\n    flex: 1;\n    padding-top: 10px;\n    padding-horizontal: 15px;\n    background: papayawhip;\n    backgroundColor: ", "\n"], ["\n    flex: 1;\n    padding-top: 10px;\n    padding-horizontal: 15px;\n    background: papayawhip;\n    backgroundColor: ", "\n"]);
+
+    var _native = require(_dependencyMap[0], "styled-components/native");
+
+    var _native2 = _interopRequireDefault(_native);
+
+    var _variables = require(_dependencyMap[1], "./variables");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+    var Container = exports.Container = _native2.default.View(_templateObject, _variables.backgroundColor);
+});

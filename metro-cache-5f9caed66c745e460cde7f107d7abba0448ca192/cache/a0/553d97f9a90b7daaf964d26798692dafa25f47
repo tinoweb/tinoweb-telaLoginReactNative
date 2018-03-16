@@ -1,0 +1,30 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+    var parse = require(_dependencyMap[0], './parse');
+
+    var walk = require(_dependencyMap[1], './walk');
+
+    var stringify = require(_dependencyMap[2], './stringify');
+
+    function ValueParser(value) {
+        if (this instanceof ValueParser) {
+            this.nodes = parse(value);
+            return this;
+        }
+
+        return new ValueParser(value);
+    }
+
+    ValueParser.prototype.toString = function () {
+        return Array.isArray(this.nodes) ? stringify(this.nodes) : '';
+    };
+
+    ValueParser.prototype.walk = function (cb, bubble) {
+        walk(this.nodes, cb, bubble);
+        return this;
+    };
+
+    ValueParser.unit = require(_dependencyMap[3], './unit');
+    ValueParser.walk = walk;
+    ValueParser.stringify = stringify;
+    module.exports = ValueParser;
+});

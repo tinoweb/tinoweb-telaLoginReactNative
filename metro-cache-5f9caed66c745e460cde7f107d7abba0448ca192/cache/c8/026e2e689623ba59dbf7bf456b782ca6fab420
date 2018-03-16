@@ -1,0 +1,13 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+  "use strict";
+
+  var _hyphenPattern = /-(.)/g;
+
+  function camelize(string) {
+    return string.replace(_hyphenPattern, function (_, character) {
+      return character.toUpperCase();
+    });
+  }
+
+  module.exports = camelize;
+});

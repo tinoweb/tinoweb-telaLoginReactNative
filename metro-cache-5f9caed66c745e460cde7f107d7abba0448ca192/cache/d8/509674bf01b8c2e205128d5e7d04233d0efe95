@@ -1,0 +1,22 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.LoginWrapper = exports.Titulo = undefined;
+
+    var _templateObject = _taggedTemplateLiteral(["\n    margin-bottom: 45px;\n    text-align: center;\n"], ["\n    margin-bottom: 45px;\n    text-align: center;\n"]),
+        _templateObject2 = _taggedTemplateLiteral(["\n    padding-horizontal: 50px;\n    padding-top: 77px;\n"], ["\n    padding-horizontal: 50px;\n    padding-top: 77px;\n"]);
+
+    var _native = require(_dependencyMap[0], "styled-components/native");
+
+    var _native2 = _interopRequireDefault(_native);
+
+    var _styles = require(_dependencyMap[1], "../../styles");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+    var Titulo = exports.Titulo = (0, _native2.default)(_styles.Text)(_templateObject);
+    var LoginWrapper = exports.LoginWrapper = (0, _native2.default)(_styles.Container)(_templateObject2);
+});
